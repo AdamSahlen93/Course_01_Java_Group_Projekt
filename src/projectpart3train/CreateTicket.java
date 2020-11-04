@@ -1,10 +1,11 @@
 package projectpart3train;
 import java.util.Scanner;
 
-public class CreateTicket
-{
-    public void createNewTicket()
-    {
+public class CreateTicket {
+	
+	
+    public void createNewTicket() {
+    	
         Passenger passenger = new Passenger(44);
         Scanner scanTicket = new Scanner(System.in);
 
@@ -16,18 +17,14 @@ public class CreateTicket
 
         ticketType = scanTicket.nextInt();
 
-        switch (ticketType)
-        {
+        switch (ticketType) {
             case 1:
                 System.out.println("**One way ticket**");
-                if(passenger.getAge() < 18 || passenger.getAge() > 65)
-                {
+                if(passenger.getAge() < 18 || passenger.getAge() > 65) {
                     System.out.println("test1 / cheap ticket");
-                }
-                    else
-                        {
-                            System.out.println("test 1 / normal ticket");
-                        }
+                } else {
+                    	System.out.println("test 1 / normal ticket");
+                    }
                 break;
 
             case 2:
@@ -35,15 +32,11 @@ public class CreateTicket
                 if(passenger.getAge() < 18 || passenger.getAge() > 65)
                 {
                     System.out.println("test 2 OneWayticket");
-                }
-                    else
-                        {
-                            System.out.println("test 2 / normal ticket");
-                        }
+                } else {
+                		System.out.println("test 2 / normal ticket");
+                    }
                 break;
         }
-
-
 
     }
 
