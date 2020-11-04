@@ -1,15 +1,10 @@
 package projectpart3train;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Travler
-{
-
-
-
-
 public class Travler {
-		
+	
 	ArrayList <Passenger> passengerList = new ArrayList <Passenger>();
 	
     public void createNewPassenger() {
