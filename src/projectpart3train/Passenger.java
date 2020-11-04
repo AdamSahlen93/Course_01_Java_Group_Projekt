@@ -3,10 +3,10 @@ package projectpart3train;
 public class Passenger
 {
 
-int age;
-String firstname;
-String lastName;
-String fullName;
+private int age;
+private String firstname;
+private String lastName;
+private String fullName;
 
                     /*KONSTRUKTOR*/
     public Passenger(int age, String firstname, String lastName, String fullName)
