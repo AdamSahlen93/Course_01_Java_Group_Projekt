@@ -18,7 +18,13 @@ private String fullName;
         this.fullName = fullName;
     }
 
-                    /* SETTERS*/
+    public Passenger(int age) {
+        this.age = age;
+    }
+
+
+
+    /* SETTERS*/
     public void setAge(int age) {
         this.age = age;
     }
