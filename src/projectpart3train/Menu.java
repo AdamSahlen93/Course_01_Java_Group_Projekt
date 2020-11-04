@@ -11,6 +11,7 @@ public class Menu {
 		while (whileLoop != 99) {
 			Scanner scanner = new Scanner(System.in);
 			int choice = scanner.nextInt();
+			
 			//Wanna try to make a try catch loop to catch exceptions like letters instead of numbers? 
 			
 			switch (choice) {
