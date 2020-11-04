@@ -4,7 +4,8 @@ public class Tickets
 {
     //Nu kör jag igång med min ticket
 
-    // kommentar robin
+    // kommentar Robin
+    // Kommentar Adam
 
     //Attribut
     //Metod
