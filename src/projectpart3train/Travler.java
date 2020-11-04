@@ -1,7 +1,12 @@
 package projectpart3train;
-
 import java.util.ArrayList;
-import java.util.Scanner; 
+import java.util.Scanner;
+
+public class Travler
+{
+
+
+
 
 public class Travler {
 		
@@ -22,4 +27,5 @@ public class Travler {
     	// Here goes the loop to check for age, and what price to pay.
     	
     }
+
 }
