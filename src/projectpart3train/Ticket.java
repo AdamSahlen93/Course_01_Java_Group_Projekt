@@ -1,6 +1,6 @@
 package projectpart3train;
 
-public class Tickets
+public class Ticket
 {
     //Nu kör jag igång med min ticket
 
