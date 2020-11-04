@@ -8,7 +8,7 @@ private String firstname;
 private String lastName;
 private String fullName;
 
-//KOMMENTAR ROBIN
+
                     /*KONSTRUKTOR*/
     public Passenger(int age, String firstname, String lastName, String fullName)
     {
