@@ -13,7 +13,7 @@ public class Traveler {
 		//Create a foorLoop to keep track on the amount of passengers in the list.
 		for (int i = 0; i < passengerList.size(); i++) {
 			//Print out the passengers.
-			System.out.println("Passenger: " );
+			System.out.println("Passenger: " + passengerList.get(i).getFirstName() + " " + passengerList.get(i).getLastName() + ". Age: " + passengerList.get(i).getAge());
 		}
 	}
 	
@@ -28,11 +28,13 @@ public class Traveler {
 		System.out.println("Welcome onboard " + firstName + " " + lastName + ". How old are you?");
 		age = scanner.nextInt();
 		//Instaciate a new object passenger to the class Travler, the object in loaded with the varibles demanded by the the constructor Passenger from the class Passenger.
+		
 		Passenger passenger = new Passenger(firstName, lastName, age);
+		//Adds to linkedList
 		passengerList.add(passenger);
 	}
 	
-	//Adds to list
+
 	
 
 }

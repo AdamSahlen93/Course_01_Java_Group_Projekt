@@ -3,9 +3,7 @@ package projectpart3train;
 //Alt: Creates the traveler in this class instead: with passenger as interface - Bins Travelers
 
 
-public class Passenger
-
-{
+public class Passenger {
 
         /*Attributes for Passenger*/
 private int age;

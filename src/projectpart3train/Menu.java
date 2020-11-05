@@ -25,6 +25,7 @@ public class Menu {
 				break;
 			case 2:
 				//Instanciate a method to show a list of all the passengers onboard the train.
+				traveler.showList();
 				break; 
 			case 3: 
 				//Instanciate a method to show the ticketprices.
