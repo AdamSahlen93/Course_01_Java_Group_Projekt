@@ -1,12 +1,12 @@
 package projectpart3train;
 
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 
 public class Traveler {
 	//List containing the passengers
-	ArrayList <Passenger> passengerList = new ArrayList <Passenger>();
+	LinkedList <Passenger> passengerList = new LinkedList <Passenger>();
 	
 	//Method showing the passengers
 	public void showList() {

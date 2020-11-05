@@ -6,7 +6,7 @@ public class Menu {
 	
 	int forSwitchLoop;
 	int forWhileLoop;
-	Travler travler = new Travler();
+	Traveler traveler = new Traveler();
 	
 	//menu-Method to run the menu.
 	public void menu() {
@@ -21,7 +21,7 @@ public class Menu {
 			switch (forSwitchLoop) {
 			case 1: 
 				//Instanciate a method to create a new passenger.
-				travler.createPassenger("", "", 0);
+				traveler.createPassenger("", "", 0);
 				break;
 			case 2:
 				//Instanciate a method to show a list of all the passengers onboard the train.
