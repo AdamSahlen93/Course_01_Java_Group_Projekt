@@ -1,6 +1,7 @@
 package projectpart3train;
 
-public interface Passenger
+interface Passenger
+
 {
 
     //Creates the tickets by checking the info in travelers

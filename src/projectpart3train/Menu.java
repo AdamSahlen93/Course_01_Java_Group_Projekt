@@ -2,12 +2,39 @@ package projectpart3train;
 
 import java.util.Scanner;
 
-public class Menu
-{
+public class Menu {
+	
+	int forSwitchLoop;
+	int forWhileLoop;
+	//menu-Method to run the menu.
+	public void menu() {
+		//Loop (while) to run switch controlling the program
+		while(forWhileLoop != 99) {	
+		//Output option for user to choose from.
+		System.out.println("--------Menu-------");
+		System.out.println("Choose one of the following, press:\n1. To register a new passenger.\n2. Look at the list of all passengers onboard.\n3. To check the ticketprices.\n4. To close the program.");
+		Scanner scanner = new Scanner(System.in);
+			//Switch
+			switch (forSwitchLoop) {
+			case 1: 
+				//Instanciate a method to create a new passenger. 
+				break;
+			case 2:
+				//Instanciate a method to show a list of all the passengers onboard the train.
+				break; 
+			case 3: 
+				//Instanciate a method to show the ticketprices.
+				break;
+			case 4: 
+				//Will shutdown the program.
+				forWhileLoop = 99;
+				break; 
+			}
+		}
+	}
 
-	//Loop (while) to run switch controlling the program
-	//Switch
-	//Output for user
+
+
 
 }
 
