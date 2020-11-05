@@ -21,19 +21,24 @@ public class Traveler implements Interface {
 	
 	@Override
 	public void createPassenger(String firstName, String lastName, int age) {
-		Scanner scanner = new Scanner(System.in);
-		//Check for the passengers name and age and store value in a local variable using scanner and set to variable in class Passanger.
-		System.out.println("Hello, what is your name?");
-		firstName = scanner.nextLine();
-		System.out.println("And your lastname please?");
-		lastName = scanner.nextLine();
-		System.out.println("Welcome onboard " + firstName + " " + lastName + ". How old are you?");
-		age = scanner.nextInt();
 		//Instaciate a new object passenger to the class Travler, the object in loaded with the variables demanded by the the constructor Passenger from the class Passenger.
 		Passenger passenger = new Passenger(firstName, lastName, age);
-		//Adds passenger to linkedList
-		passengerList.add(passenger);
+		Scanner scanner = new Scanner(System.in);
+		//Check for the passengers name and age and store value in a local variable using scanner and set to variable in class Passanger.
+		try {
+			System.out.println("Hello, what is your name?");
+			passenger.setFirstName(scanner.nextLine());
+			System.out.println("And your lastname please?");
+			passenger.setLastName(scanner.nextLine());
+			System.out.println("Welcome onboard " + passenger.getFirstName() + " " + passenger.getLastName() + ". How old are you?");
+			passenger.setAge(scanner.nextInt());
+			//Adds passenger to linkedList
+			passengerList.add(passenger);
+		} catch (Exception e) {
+			System.out.println("I need a valid age, now we have to start over...");
+			createPassenger(firstName, lastName, age);
+		}
+		
 	}
-
 
 }
