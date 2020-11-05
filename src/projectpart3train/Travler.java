@@ -5,6 +5,8 @@ import java.util.Scanner;
 
 public class Travler
 {
+	
+	
 	//List containing the passengers
 	//Method showing the passengers
 	//Creates passengers

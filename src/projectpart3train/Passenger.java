@@ -2,7 +2,9 @@ package projectpart3train;
 //Creates the tickets by checking the info in travelers
 //Alt: Creates the traveler in this class instead: with passenger as interface - Bins Travelers
 
+
 public class Passenger
+
 {
 
         /*Attributes for Passenger*/
