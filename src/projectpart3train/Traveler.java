@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.Scanner;
 
 
-public class Traveler {
+public class Traveler implements Interface {
 	//List containing the passengers
 	LinkedList <Passenger> passengerList = new LinkedList <Passenger>();
 	
@@ -18,6 +18,8 @@ public class Traveler {
 	}
 	
 	//Create a method to Creates passengers
+	
+	@Override
 	public void createPassenger(String firstName, String lastName, int age) {
 		Scanner scanner = new Scanner(System.in);
 		//Check for the passengers name and age and store value in a local variable using scanner and set to variable in class Passanger.
@@ -27,14 +29,11 @@ public class Traveler {
 		lastName = scanner.nextLine();
 		System.out.println("Welcome onboard " + firstName + " " + lastName + ". How old are you?");
 		age = scanner.nextInt();
-		//Instaciate a new object passenger to the class Travler, the object in loaded with the varibles demanded by the the constructor Passenger from the class Passenger.
-		
+		//Instaciate a new object passenger to the class Travler, the object in loaded with the variables demanded by the the constructor Passenger from the class Passenger.
 		Passenger passenger = new Passenger(firstName, lastName, age);
-		//Adds to linkedList
+		//Adds passenger to linkedList
 		passengerList.add(passenger);
 	}
-	
 
-	
 
 }
