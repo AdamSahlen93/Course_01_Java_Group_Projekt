@@ -3,9 +3,7 @@ package projectpart3train;
 //Alt: Creates the traveler in this class instead: with passenger as interface - Bins Travelers
 
 
-public class Passenger
-
-{
+public class Passenger {
 
         /*Attributes for Passenger*/
 private int age;
@@ -15,7 +13,12 @@ private String fullName;
 
          /* Construktor to be inserted here, depending on what parameters we will use.*/
             /* No constructor at the moment.*/
-
+			//Temporary constructor to try program.
+	public Passenger (String firstName, String lastName, int age) {
+		this.firstName = firstName; 
+		this.lastName = lastName;
+		this.age = age;
+	}
 
 
         /*SETTERS*/

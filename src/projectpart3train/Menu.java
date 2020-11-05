@@ -6,6 +6,8 @@ public class Menu {
 	
 	int forSwitchLoop;
 	int forWhileLoop;
+	Traveler traveler = new Traveler();
+	
 	//menu-Method to run the menu.
 	public void menu() {
 		//Loop (while) to run switch controlling the program
@@ -14,13 +16,16 @@ public class Menu {
 		System.out.println("--------Menu-------");
 		System.out.println("Choose one of the following, press:\n1. To register a new passenger.\n2. Look at the list of all passengers onboard.\n3. To check the ticketprices.\n4. To close the program.");
 		Scanner scanner = new Scanner(System.in);
+		int forSwitchLoop = scanner.nextInt();
 			//Switch
 			switch (forSwitchLoop) {
 			case 1: 
-				//Instanciate a method to create a new passenger. 
+				//Instanciate a method to create a new passenger.
+				traveler.createPassenger("", "", 0);
 				break;
 			case 2:
 				//Instanciate a method to show a list of all the passengers onboard the train.
+				traveler.showList();
 				break; 
 			case 3: 
 				//Instanciate a method to show the ticketprices.
