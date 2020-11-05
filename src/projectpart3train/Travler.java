@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 
-public class Travler {
+public class Traveler {
 	//List containing the passengers
 	ArrayList <Passenger> passengerList = new ArrayList <Passenger>();
 	
