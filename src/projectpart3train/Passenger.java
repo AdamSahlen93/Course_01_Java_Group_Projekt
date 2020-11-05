@@ -1,7 +1,11 @@
 package projectpart3train;
 
-public class Passenger
+public interface Passenger
 {
+
+    //Creates the tickets by checking the info in travelers
+    //Alt: Creates the traveler in this class instead: with passenger as interface - Bins Travelers
+
 
 private int age;
 private String firstname;

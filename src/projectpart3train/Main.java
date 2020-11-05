@@ -5,9 +5,9 @@ public class Main
 
     public static void main(String[] args)
     {
-        // initiera menu() from class Menu.
-        Menu menu = new Menu();
-        menu.menu();
+        //Initiate object menu from class Menu
+        //Initiate method in menu
+
     }
 
 }

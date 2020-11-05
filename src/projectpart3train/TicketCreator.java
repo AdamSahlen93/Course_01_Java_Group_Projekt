@@ -1,9 +1,14 @@
 package projectpart3train;
 import java.util.Scanner;
 
-public class CreateTicket {
-	
-	
+public class TicketCreator
+{
+
+    //Creates the tickets by checking the info in travelers
+    //Alt: Creates the traveler in this class instead: with passenger as interface - Bins Travelers
+
+
+
     public void createNewTicket() {
     	
         Passenger passenger = new Passenger(44);

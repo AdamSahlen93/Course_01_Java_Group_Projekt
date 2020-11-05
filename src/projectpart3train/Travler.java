@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Travler {
+	//List containing the passengers
+	//Method showing the passengers
+	//Creates passengers
+	//Adds to list
+
 	
 	ArrayList <Passenger> passengerList = new ArrayList <Passenger>();
 	
@@ -24,7 +29,7 @@ public class Travler {
     	// Here goes the loop to check for age, and what price to pay.
 
 		//initiate method from class CreateTicket
-		CreateTicket createTicket = new CreateTicket();
+		TicketCreator createTicket = new TicketCreator();
 		createTicket.createNewTicket();
 
     }
