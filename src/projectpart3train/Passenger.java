@@ -15,7 +15,12 @@ private String fullName;
 
          /* Construktor to be inserted here, depending on what parameters we will use.*/
             /* No constructor at the moment.*/
-
+			//Temporary constructor to try program.
+	public Passenger (String firstName, String lastName, int age) {
+		this.firstName = firstName; 
+		this.lastName = lastName;
+		this.age = age;
+	}
 
 
         /*SETTERS*/
