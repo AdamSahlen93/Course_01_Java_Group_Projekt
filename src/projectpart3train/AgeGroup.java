@@ -2,6 +2,27 @@ package projectpart3train;
 
 public enum AgeGroup
 {
-    //Junior, Senior & Regular
-    JUNIOR, SENIOR, REGULAR
+    SENIOR
+           /* {
+                String toString()
+                {
+                    return "Senior";
+                }
+            }*/
+
+    ,JUNIOR
+           /* {
+                String toString()
+                {
+                    return "Junior";
+                }
+            }*/
+
+    ,REGULAR
+        /*{
+            String toString()
+            {
+                return "Regular";
+            }
+        }*/
 }
