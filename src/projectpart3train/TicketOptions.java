@@ -22,7 +22,6 @@ public class TicketOptions
     {
 
         System.out.println("\n");
-        System.out.println("Your ticket options are!");
         System.out.println("----------");
         System.out.println(ticketOptions.get(0) + ":");
         System.out.println(AgeGroup.REGULAR.toString() + " : " + singleTicketRegular + " kr");

@@ -14,8 +14,8 @@ public class Menu {
 		while(forWhileLoop != 99) {	
 		//Output option for user to choose from.
 
-		System.out.println("--------Menu-------");
-		System.out.println("Choose one of the following, press:\n1. To register a new passenger.\n2. Look at the list of all passengers onboard.\n3. To check the ticketprices.\n4. To close the program.");
+		System.out.println("--------------Menu-------------");
+		System.out.println("1. New passenger\n2. Show passengers\n3. Ticketprices\n4. Exit");
 		Scanner scanner = new Scanner(System.in);
 		int forSwitchLoop = scanner.nextInt();
 			//Switch
