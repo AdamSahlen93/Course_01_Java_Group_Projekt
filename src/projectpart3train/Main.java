@@ -9,9 +9,7 @@ public class Main
         //Initiate method in menu
         Menu menu = new Menu();
         menu.menu();
-
     }
-
 }
 
 
