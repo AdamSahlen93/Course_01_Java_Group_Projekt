@@ -8,9 +8,9 @@ public class Menu {
 	int forWhileLoop = 0;
 	Traveler traveler = new Traveler();
 	TicketCreator ticketCreator = new TicketCreator();
-	
 	//menu-Method to run the menu.
 	public void menu() {
+	
 		//Loop (while) to run switch controlling the program
 		while(forWhileLoop != 99) {	
 		//Output option for user to choose from.
