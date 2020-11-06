@@ -6,7 +6,6 @@ public class Menu {
 	
 	//int forSwitchLoop;
 	int forWhileLoop = 0;
-	Traveler traveler = new Traveler();
 	TicketCreator ticketCreator = new TicketCreator();
 	//menu-Method to run the menu.
 	public void menu() {
@@ -23,12 +22,12 @@ public class Menu {
 			switch (forSwitchLoop) {
 			case 1: 
 				//Instanciate a method to create a new passenger.
-				traveler.createPassenger("", "", 0);
+				ticketCreator.createPassenger("", "", 0);
 				ticketCreator.createTicketType();
 				break;
 			case 2:
 				//Instanciate a method to show a list of all the passengers onboard the train.
-				traveler.showList();
+				ticketCreator.showList();
 				break; 
 			case 3: 
 				//Instanciate a method to show the ticketprices.
