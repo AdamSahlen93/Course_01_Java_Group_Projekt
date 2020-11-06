@@ -22,7 +22,7 @@ public class Menu {
 			switch (forSwitchLoop) {
 			case 1: 
 				//Instanciate a method to create a new passenger.
-				ticketCreator.createPassenger("", "", 0);
+				ticketCreator.createPassenger();
 				ticketCreator.createTicketType();
 				break;
 			case 2:

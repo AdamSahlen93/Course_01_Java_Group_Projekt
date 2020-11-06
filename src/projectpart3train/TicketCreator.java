@@ -24,12 +24,12 @@ public class TicketCreator extends TicketOptions implements Interface {
 	}
 	
 	//Create a method to Creates passengers
-	@Override
-	public void createPassenger(String firstName, String lastName, int age)
+
+	public void createPassenger()
     {
 		//Instaciate a new object passenger to the class Travler, the object in loaded with the variables demanded by the the constructor Passenger from the class Passenger.
 
-		Passenger passenger = new Passenger(firstName, lastName, age);
+		Passenger passenger = new Passenger();
 		Scanner scanner = new Scanner(System.in);
 		//Check for the passengers name and age and store value using scanner and set to variable in class Passanger.
 		System.out.println("Welcome onboard, what is your first name?");
