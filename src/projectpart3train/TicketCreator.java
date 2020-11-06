@@ -1,10 +1,9 @@
 package projectpart3train;
 import java.util.Scanner;
 
-public class TicketCreator extends  TicketOptions
+public class TicketCreator extends TicketOptions
 {
     //Creates the tickets by checking the info in travelers
-    Traveler traveler = new Traveler();
     Scanner ticketChoice = new Scanner(System.in);
 
     
@@ -13,7 +12,7 @@ public class TicketCreator extends  TicketOptions
 
     public void createTicketType()
     {
-
+        addTicketOptions();
         System.out.println("Which type of ticket do you want? \n 1. " + ticketOptions.get(0) +"\n 2." + ticketOptions.get(1));
         int customerChoice = ticketChoice.nextInt();
 
