@@ -31,13 +31,16 @@ public class TicketCreator extends TicketOptions implements Interface {
 
 		Passenger passenger = new Passenger(firstName, lastName, age);
 		Scanner scanner = new Scanner(System.in);
-		//Check for the passengers name and age and store value in a local variable using scanner and set to variable in class Passanger.
-
+		//Check for the passengers name and age and store value using scanner and set to variable in class Passanger.
+		System.out.println("Welcome onboard, what is your first name?");
+		passenger.setFirstName(scanner.nextLine());
+		System.out.println("What is your last name?");
+		passenger.setLastName(scanner.nextLine());
+		System.out.println("Hello " + passenger.getFirstName() + " " + passenger.getLastName() + ". I need to know how old you are?");
+		passenger.setAge(scanner.nextInt());
+		passengerList.add(passenger);
     }
 
-
-    
-    
     public void createTicketType()
     {
         addTicketOptions();
