@@ -24,12 +24,11 @@ public class TicketCreator extends TicketOptions implements Interface {
 	}
 	
 	//Create a method to Creates passengers
-	@Override
-	public void createPassenger(String firstName, String lastName, int age)
+	public void createPassenger()
     {
 		//Instaciate a new object passenger to the class Travler, the object in loaded with the variables demanded by the the constructor Passenger from the class Passenger.
 
-		Passenger passenger = new Passenger(firstName, lastName, age);
+		Passenger passenger = new Passenger();
 		Scanner scanner = new Scanner(System.in);
 		//Check for the passengers name and age and store value using scanner and set to variable in class Passanger.
 		System.out.println("Welcome onboard, what is your first name?");
@@ -56,33 +55,32 @@ public class TicketCreator extends TicketOptions implements Interface {
                     System.out.println("You qualify for the " + AgeGroup.JUNIOR.toString() + " ticket!");
                     System.out.println("Your total is: " + getSingleTicketDiscount() + "\n Here is your ticket!") ;
                     System.out.println("\n --------Ticket------");
-                    
                     System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-
                     System.out.println("Ticket type: " + ticketOptions.get(0) + " - " + AgeGroup.JUNIOR.toString());
+                    System.out.println("----------------------------------");
+                    System.out.println("\n");
                 }
                 else if (passengerList.getLast().getAge() > 64)
                 {
                     System.out.println("You qualify for the " + AgeGroup.SENIOR.toString() + " ticket!");
                     System.out.println("Your total is: " + getSingleTicketDiscount());
                     System.out.println("\n --------Ticket------");
-
-
                     System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-
                     System.out.println("Ticket type: " + ticketOptions.get(0) + " - " + AgeGroup.SENIOR.toString());
+                    System.out.println("----------------------------------");
+                    System.out.println("\n");
                 }
                 else
                 {
                     System.out.println("Unfortunately you don't qualify for a discount ticket and will have to pay for the " + AgeGroup.REGULAR.toString() + " ticket!" );
                     System.out.println("Your total is: " + getSingleTicketRegular());
                     System.out.println("\n --------Ticket------");
-
-
                     System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-
                     System.out.println("Ticket type: " + ticketOptions.get(0) + " - " + AgeGroup.REGULAR.toString());
+                    System.out.println("----------------------------------");
+                    System.out.println("\n");
                 }
+                break;
 
             case 2:
 
@@ -91,35 +89,34 @@ public class TicketCreator extends TicketOptions implements Interface {
                     System.out.println("You qualify for the " + AgeGroup.JUNIOR.toString() + " ticket!");
                     System.out.println("Your total is: " + getMonthlyTicketDiscount() + "\n Here is your ticket!") ;
                     System.out.println("\n --------Ticket------");
-
-
-
                     System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-
                     System.out.println("Ticket type: " + ticketOptions.get(1) + " - " + AgeGroup.JUNIOR.toString());
+                    System.out.println("----------------------------------");
+                    System.out.println("\n");
                 }
                 else if (passengerList.getLast().getAge() > 64)
                 {
                     System.out.println("You qualify for the " + AgeGroup.SENIOR.toString() + " ticket!");
                     System.out.println("Your total is: " + getSingleTicketDiscount());
-                    System.out.println("\n --------Ticket------");
-
-
+                    System.out.println("\n --------------Ticket---------------");
                     System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
                     System.out.println("Ticket type: " + ticketOptions.get(1) + " - " + AgeGroup.SENIOR.toString());
+                    System.out.println("----------------------------------");
+                    System.out.println("\n");
                 }
                 else
                 {
                     System.out.println("Unfortunately you don't qualify for a discount ticket and will have to pay for the " + AgeGroup.REGULAR.toString() + " ticket!" );
                     System.out.println("Your total is: " + getMonthlyTicketRegular());
                     System.out.println("\n --------Ticket------");
-
-
-
                     System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-
                     System.out.println("Ticket type: " + ticketOptions.get(1) + " - " + AgeGroup.REGULAR.toString());
+                    System.out.println("----------------------------------");
+                    System.out.println("\n");
+                    break;
                 }
+            default:
+                System.out.println("Something went wrong, try again!");
 
         }
 
