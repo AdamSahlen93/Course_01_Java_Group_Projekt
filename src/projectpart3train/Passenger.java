@@ -9,7 +9,6 @@ public class Passenger {
 private int age;
 private String firstName;
 private String lastName;
-private String fullName;
 
          /* Construktor to be inserted here, depending on what parameters we will use.*/
             /* No constructor at the moment.*/
@@ -35,9 +34,6 @@ private String fullName;
         this.lastName = lastName;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
     /*GETTERS */
 
     public int getAge() {
@@ -52,9 +48,6 @@ private String fullName;
         return lastName;
     }
 
-    public String getFullName() {
-        return fullName;
-    }
 }
 
 
