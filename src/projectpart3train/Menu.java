@@ -31,12 +31,16 @@ public class Menu {
 				break; 
 			case 3: 
 				//Instanciate a method to show the ticketprices.
+				ticketCreator.addTicketOptions();
 				ticketCreator.showTicketOptions();
 				break;
 			case 4: 
 				//Will shutdown the program.
 				forWhileLoop = 99;
-				break; 
+				break;
+				default:
+					System.out.println("Something went wrong, try again!");
+
 
 			}
 		}

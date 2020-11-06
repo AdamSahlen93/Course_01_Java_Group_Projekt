@@ -21,6 +21,20 @@ public class TicketOptions
     public void showTicketOptions()
     {
 
+        System.out.println("\n");
+        System.out.println("Your ticket options are!");
+        System.out.println("----------");
+        System.out.println(ticketOptions.get(0) + ":");
+        System.out.println(AgeGroup.REGULAR.toString() + " : " + singleTicketRegular + " kr");
+        System.out.println(AgeGroup.JUNIOR.toString() + " : " + singleTicketDiscount + " kr");
+        System.out.println(AgeGroup.SENIOR.toString() + " : " + singleTicketDiscount + " kr");
+        System.out.println("----------");
+        System.out.println(ticketOptions.get(1) + ":");
+        System.out.println(AgeGroup.REGULAR.toString() + " : " + monthlyTicketRegular + " kr");
+        System.out.println(AgeGroup.JUNIOR.toString() + " : " + monthlyTicketDiscount + " kr");
+        System.out.println(AgeGroup.SENIOR.toString() + " : " + monthlyTicketDiscount + " kr");
+        System.out.println("\n");
+
     }
 
     public int getSingleTicketRegular()
