@@ -45,7 +45,7 @@ public class TicketCreator extends TicketOptions implements Interface {
     public void createTicketType()
     {
         addTicketOptions();
-        System.out.println("Which type of ticket do you want? \n 1." + ticketOptions.get(0) +"\n 2." + ticketOptions.get(1));
+        System.out.println("1." + ticketOptions.get(0) +"\n2." + ticketOptions.get(1));
         int customerChoice = ticketChoice.nextInt();
 
         switch (customerChoice)
@@ -58,7 +58,7 @@ public class TicketCreator extends TicketOptions implements Interface {
                     System.out.println("Price: " + getSingleTicketDiscount() + " kr") ;
                     System.out.println("\n--------------Ticket------------");
                     System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-                    System.out.println("Ticket type: " + ticketOptions.get(0) + " - " + AgeGroup.JUNIOR.toString());
+                    System.out.println(ticketOptions.get(0) + " - " + AgeGroup.JUNIOR.toString());
                     System.out.println("----------------------------------");
                     System.out.println("\n");
                 }
@@ -68,7 +68,7 @@ public class TicketCreator extends TicketOptions implements Interface {
                     System.out.println("Price: " + getSingleTicketDiscount() + " kr");
                     System.out.println("\n--------------Ticket------------");
                     System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-                    System.out.println("Ticket type: " + ticketOptions.get(0) + " - " + AgeGroup.SENIOR.toString());
+                    System.out.println(ticketOptions.get(0) + " - " + AgeGroup.SENIOR.toString());
                     System.out.println("----------------------------------");
                     System.out.println("\n");
                 }
@@ -78,7 +78,7 @@ public class TicketCreator extends TicketOptions implements Interface {
                     System.out.println("Price: " + getSingleTicketRegular() + " kr");
                     System.out.println("\n--------------Ticket------------");
                     System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-                    System.out.println("Ticket type: " + ticketOptions.get(0) + " - " + AgeGroup.REGULAR.toString());
+                    System.out.println(ticketOptions.get(0) + " - " + AgeGroup.REGULAR.toString());
                     System.out.println("----------------------------------");
                     System.out.println("\n");
                 }
@@ -92,7 +92,7 @@ public class TicketCreator extends TicketOptions implements Interface {
                     System.out.println("Price: " + getMonthlyTicketDiscount() + " kr");
                     System.out.println("\n--------------Ticket------------");
                     System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-                    System.out.println("Ticket type: " + ticketOptions.get(1) + " - " + AgeGroup.JUNIOR.toString());
+                    System.out.println(ticketOptions.get(1) + " - " + AgeGroup.JUNIOR.toString());
                     System.out.println("----------------------------------");
                     System.out.println("\n");
                 }
@@ -102,7 +102,7 @@ public class TicketCreator extends TicketOptions implements Interface {
                     System.out.println("Price " + getSingleTicketDiscount() + " kr");
                     System.out.println("\n --------------Ticket-----------");
                     System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-                    System.out.println("Ticket type: " + ticketOptions.get(1) + " - " + AgeGroup.SENIOR.toString());
+                    System.out.println(ticketOptions.get(1) + " - " + AgeGroup.SENIOR.toString());
                     System.out.println("----------------------------------");
                     System.out.println("\n");
                 }
@@ -112,7 +112,7 @@ public class TicketCreator extends TicketOptions implements Interface {
                     System.out.println("Price: " + getMonthlyTicketRegular() + " kr");
                     System.out.println("\n--------------Ticket------------");
                     System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-                    System.out.println("Ticket type: " + ticketOptions.get(1) + " - " + AgeGroup.REGULAR.toString());
+                    System.out.println(ticketOptions.get(1) + " - " + AgeGroup.REGULAR.toString());
                     System.out.println("----------------------------------");
                     System.out.println("\n");
                     break;
