@@ -25,6 +25,7 @@ public class TicketCreator extends TicketOptions implements Interface {
 	}
 	
 	//Create a method to Creates passengers
+
 	public void createPassenger()
     {
         try
@@ -63,7 +64,7 @@ public class TicketCreator extends TicketOptions implements Interface {
             {
                 case 1:
 
-                    if (passengerList.getLast().getAge() < 17)
+                    if (passengerList.getLast().getAge() < 18)
                     {
                         System.out.println("\nTicket type " + AgeGroup.JUNIOR.toString());
                         System.out.println("Price: " + getSingleTicketDiscount() + " kr");
@@ -95,7 +96,7 @@ public class TicketCreator extends TicketOptions implements Interface {
 
                 case 2:
 
-                    if (passengerList.getLast().getAge() < 17)
+                    if (passengerList.getLast().getAge() < 18)
                     {
                         System.out.println("\nTicket type: " + AgeGroup.JUNIOR.toString());
                         System.out.println("Price: " + getMonthlyTicketDiscount() + " kr");

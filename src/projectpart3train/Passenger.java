@@ -15,13 +15,11 @@ private String lastName;
 			//Temporary constructor to try program.
 
 
-	public Passenger ()
-    {
+
+    public Passenger() {
 
     }
-
-
-        /*SETTERS*/
+    /*SETTERS*/
 
     public void setAge(int age) {
         this.age = age;
