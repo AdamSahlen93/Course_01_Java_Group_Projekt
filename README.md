@@ -79,12 +79,56 @@ menu, main-method, switch, try-catch, showList, creatPassenger, creatTicketType,
 ##### Analys om hurvida vi kan använda oss av ENUM / Interface och fördelar/nackdelar. 
 
 ##### 6/11:
-##### //SANDRA TITTAR IN ***** // ÄNDRING AV KLASSNAMN OSV *****
+##### Sandra kom in i vår teamgrupp under dagen och vi diskuterade vårt program med eventuella förändringar av klassnamn. 
+##### Detta arbetade vi resterande tid av dagen. 
  
 
 
 #####På vilket sätt har ni använt er av Objektorentering? Vi har använt oss av objektorientering genom att...
+##### :
 
 #####Vilka klasser och metoder har vem haft ansvar för?
 
-####Grupparbete Vilka klasser och metoder har vem haft ansvar för? Hur har det gått att jobba i grupp? Var det nåt som blev enklare att vara i grupp än att vara själv? Vad har ni stött på för svårigheter med att jobba i grupp?
+
+
+####Grupparbete Vilka klasser och metoder har vem haft ansvar
+ för? Hur har det gått att jobba i grupp? Var det nåt som blev
+  enklare att vara i grupp än att vara själv? Vad har ni stött på för svårigheter med att jobba i grupp?
+  
+ #### Beskrivning av hur vårt grupparbete har gått till :
+Vi började med en övergripande diskussion om projektet och skapade en mindmap som ingångspunkt.
+
+Efter vi diskuterat vår mindmap beslöt
+
+ Då projektet i sin helhet inte verkade så komplext, ville vi som grupp och individer nyttja tillfället att alla skulle få
+  lära sig så mycket som möjligt, lät vi alla göra ett eget lösningsförslag i pseudokod som vi diskuterade. 
+  
+  De individuella pseudokoderna diskuterade vi gemensamt och delade skärmar för att gå igenom alla förslag.
+  
+  Vi tog sedan de delar vi alla gillade och testade att sätta ihop projektet genom att skapa ett Githubprojekt samt gemensamt 
+  repository.
+  
+  I Githubprojektet bröt vi ner projektet som helhet i mindre uppgifter och tilldelade dessa till samtliga gruppmedlemmar. 
+  
+  Tilldelningen såg ut som nedan: 
+  
+  Adam: Klass: Ticket, TicketOptions. Enum: PassengerCategories 
+  
+  Simon: Klass: TrainApplication. Interface: IPassenger.
+  
+  Robin: Klass: PassengerProperties, Main. Rapport: README.
+  
+  Efter indelning skapade var och en de tillordnade objekten inkluderande pseudokod och lade till dessa i repository:n. 
+  Därefter kodade vi alla klasser tilsammans via delad skärm.
+  
+  Efter att ha kodad första versionen av programmet insåg vi att vissa av klassnamnen borde bytas för att göra 
+  programmet mer lättläst och logiskt. // Textual anysis //
+  
+  Vi använde oss av ett //ENUM// för ....  // 
+  
+  Vi använde oss av ett //INTERFACE// för att få in ett tvingande av metoden CreatePassenger() .....//
+  
+  
+
+  // FÖRBÄTTRING - i ett finare ord/// 
+

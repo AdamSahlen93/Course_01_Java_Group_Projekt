@@ -64,7 +64,7 @@ public class Ticket extends TicketOptions implements IPassenger
             {
                 case 1:
 
-                    if (passengerList.getLast().getAge() < 17)
+                    if (passengerList.getLast().getAge() < 18)
                     {
                         System.out.println("\nTicket type " + PassengerCategories.JUNIOR.toString());
                         System.out.println("Price: " + getSingleTicketDiscount() + " kr");
@@ -96,7 +96,7 @@ public class Ticket extends TicketOptions implements IPassenger
 
                 case 2:
 
-                    if (passengerList.getLast().getAge() < 17)
+                    if (passengerList.getLast().getAge() < 18)
                     {
                         System.out.println("\nTicket type: " + PassengerCategories.JUNIOR.toString());
                         System.out.println("Price: " + getMonthlyTicketDiscount() + " kr");
