@@ -5,16 +5,50 @@
 ####Textual Analysis
 
 ####Kandidater
-#####Objekt:
+#####Objekt: 
+Klasser: Ticket, Passenger, Travelers, Menu, TrainApplication, Main
+TicketOptions, PassengerCategories, TicketCreator 
+
+Enum: PassengerCategories, AgeGroup
+
+Interface: IPassenger, Interface
+
+Lists: ArrayList prices, Arraylist passengers, LinkedList passengerList, ArrayList ticketOptions 
+
 #####Metoder: 
+menu, main-method, switch, try-catch, showList, creatPassenger, creatTicketType, for-loop, while-loop, askPassenger, addTicketOptions, showTicketOptions, getters, setters
+
 #####Variaber: 
++forWhileLoop:int, +forSwitchLoop:int, +i:int, +customerChoice:int, -singleTicketRegular:int, -singleTicketDiscount:int, -monthlyTicketRegular:int, -monthlyTicketDiscount:int, -age:int, -firstName:String, -lastName:String, -fullName:String, +REGULAR:Enum, +SENIOR:Enum, +YOUTH:Enum, +choice:int
+
 #####Aktörer:
+???
 
-####Vilka av kandidaterna som blev vad:
+####Vilka av kandidaterna som blev av:
 
-#####Objekt: #####Metoder: #####Variaber: #####Aktörer:
+#####Objekt: 
+Klasser: Ticket, Menu, TrainApplication, Main
+TicketOptions, PassengerCategories 
+
+Enum: PassengerCategories
+
+Interface: IPassenger
+
+Lists: LinkedList passengerList, ArrayList ticketOptions 
+
+#####Metoder: 
+
+menu, main-method, switch, try-catch, showList, creatPassenger, creatTicketType, for-loop, while-loop, addTicketOptions, showTicketOptions, getters för , setters
+
+#####Variaber: 
+
++forWhileLoop:int, +forSwitchLoop:int, +i:int, +customerChoice:int, -singleTicketRegular:int, -singleTicketDiscount:int, -monthlyTicketRegular:int, -monthlyTicketDiscount:int, -age:int, -firstName:String, -lastName:String, -fullName:String, +REGULAR:Enum, +SENIOR:Enum, +YOUTH:Enum, +choice:int
+
+#####Aktörer:
+???
 
 #####Motivering av objekt (endast objekten ska motiveras): Vi valde dessa objekt för att...
+
 
 ####Daglogg
 
@@ -37,11 +71,15 @@
 
 ##### 4/11: 
 ##### Fördjupning i Getters och setters samt priviata attribut. 
+##### Diskussion om encapsulation och datahiding förs. 
 
 
 ##### 5/11: 
 ##### Arbete med att strukturera upp projektet i ULM-diagram/ Pseudokod för att förtydliga för varandra igen.
 ##### Analys om hurvida vi kan använda oss av ENUM / Interface och fördelar/nackdelar. 
+
+##### 6/11:
+##### //SANDRA TITTAR IN ***** // ÄNDRING AV KLASSNAMN OSV *****
  
 
 

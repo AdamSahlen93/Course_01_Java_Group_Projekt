@@ -7,7 +7,7 @@ public class Main
     {
         //Initiate object menu from class Menu
         //Initiate method in menu
-        Menu menu = new Menu();
+        TrainApplication menu = new TrainApplication();
         menu.menu();
     }
 }

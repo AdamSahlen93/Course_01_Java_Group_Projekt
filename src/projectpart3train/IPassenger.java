@@ -1,6 +1,7 @@
 package projectpart3train;
 
-interface Interface {
+interface IPassenger
+{
 
 
 	public void createPassenger();

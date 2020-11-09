@@ -2,11 +2,12 @@ package projectpart3train;
 
 import java.util.Scanner;
 
-public class Menu {
+public class TrainApplication
+{
 	
 	//int forSwitchLoop;
 	int forWhileLoop = 0;
-	TicketCreator ticketCreator = new TicketCreator();
+	Ticket ticketCreator = new Ticket();
 	//menu-Method to run the menu.
 	public void menu() {
 	

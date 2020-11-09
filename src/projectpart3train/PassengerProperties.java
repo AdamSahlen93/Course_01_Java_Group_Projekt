@@ -3,7 +3,8 @@ package projectpart3train;
 //Alt: Creates the traveler in this class instead: with passenger as interface - Bins Travelers
 
 
-public class Passenger {
+public class PassengerProperties
+{
 
         /*Attributes for Passenger*/
 private int age;
@@ -15,7 +16,7 @@ private String lastName;
 			//Temporary constructor to try program.
 
 
-	public Passenger ()
+	public PassengerProperties()
     {
 
     }

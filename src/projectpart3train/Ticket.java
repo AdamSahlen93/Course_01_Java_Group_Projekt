@@ -2,12 +2,13 @@ package projectpart3train;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class TicketCreator extends TicketOptions implements Interface {
+public class Ticket extends TicketOptions implements IPassenger
+{
 	
 
     //Creates the tickets by checking the info in travelers
 	//List containing the passengers
-	LinkedList <Passenger> passengerList = new LinkedList <>();
+	LinkedList <PassengerProperties> passengerList = new LinkedList <>();
 	
     
     //Alt: Creates the traveler in this class instead: with passenger as interface - Bins Travelers
@@ -31,7 +32,7 @@ public class TicketCreator extends TicketOptions implements Interface {
         {
             //Instaciate a new object passenger to the class Travler, the object in loaded with the variables demanded by the the constructor Passenger from the class Passenger.
 
-            Passenger passenger = new Passenger();
+            PassengerProperties passenger = new PassengerProperties();
             Scanner scanner = new Scanner(System.in);
             //Check for the passengers name and age and store value using scanner and set to variable in class Passanger.
             System.out.println("First name: ");
@@ -65,29 +66,29 @@ public class TicketCreator extends TicketOptions implements Interface {
 
                     if (passengerList.getLast().getAge() < 17)
                     {
-                        System.out.println("\nTicket type " + AgeGroup.JUNIOR.toString());
+                        System.out.println("\nTicket type " + PassengerCategories.JUNIOR.toString());
                         System.out.println("Price: " + getSingleTicketDiscount() + " kr");
                         System.out.println("\n--------------Ticket------------");
                         System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-                        System.out.println(ticketOptions.get(0) + " - " + AgeGroup.JUNIOR.toString());
+                        System.out.println(ticketOptions.get(0) + " - " + PassengerCategories.JUNIOR.toString());
                         System.out.println("----------------------------------");
                         System.out.println("\n");
                     } else if (passengerList.getLast().getAge() > 64)
                     {
-                        System.out.println("\nTicket type: " + AgeGroup.SENIOR.toString());
+                        System.out.println("\nTicket type: " + PassengerCategories.SENIOR.toString());
                         System.out.println("Price: " + getSingleTicketDiscount() + " kr");
                         System.out.println("\n--------------Ticket------------");
                         System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-                        System.out.println(ticketOptions.get(0) + " - " + AgeGroup.SENIOR.toString());
+                        System.out.println(ticketOptions.get(0) + " - " + PassengerCategories.SENIOR.toString());
                         System.out.println("----------------------------------");
                         System.out.println("\n");
                     } else
                     {
-                        System.out.println("\nTicket type: " + AgeGroup.REGULAR.toString());
+                        System.out.println("\nTicket type: " + PassengerCategories.REGULAR.toString());
                         System.out.println("Price: " + getSingleTicketRegular() + " kr");
                         System.out.println("\n--------------Ticket------------");
                         System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-                        System.out.println(ticketOptions.get(0) + " - " + AgeGroup.REGULAR.toString());
+                        System.out.println(ticketOptions.get(0) + " - " + PassengerCategories.REGULAR.toString());
                         System.out.println("----------------------------------");
                         System.out.println("\n");
                     }
@@ -97,29 +98,29 @@ public class TicketCreator extends TicketOptions implements Interface {
 
                     if (passengerList.getLast().getAge() < 17)
                     {
-                        System.out.println("\nTicket type: " + AgeGroup.JUNIOR.toString());
+                        System.out.println("\nTicket type: " + PassengerCategories.JUNIOR.toString());
                         System.out.println("Price: " + getMonthlyTicketDiscount() + " kr");
                         System.out.println("\n--------------Ticket------------");
                         System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-                        System.out.println(ticketOptions.get(1) + " - " + AgeGroup.JUNIOR.toString());
+                        System.out.println(ticketOptions.get(1) + " - " + PassengerCategories.JUNIOR.toString());
                         System.out.println("----------------------------------");
                         System.out.println("\n");
                     } else if (passengerList.getLast().getAge() > 64)
                     {
-                        System.out.println("\nTicket type: " + AgeGroup.SENIOR.toString());
+                        System.out.println("\nTicket type: " + PassengerCategories.SENIOR.toString());
                         System.out.println("Price " + getSingleTicketDiscount() + " kr");
                         System.out.println("\n --------------Ticket-----------");
                         System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-                        System.out.println(ticketOptions.get(1) + " - " + AgeGroup.SENIOR.toString());
+                        System.out.println(ticketOptions.get(1) + " - " + PassengerCategories.SENIOR.toString());
                         System.out.println("----------------------------------");
                         System.out.println("\n");
                     } else
                     {
-                        System.out.println("\nTicket type: " + AgeGroup.REGULAR.toString());
+                        System.out.println("\nTicket type: " + PassengerCategories.REGULAR.toString());
                         System.out.println("Price: " + getMonthlyTicketRegular() + " kr");
                         System.out.println("\n--------------Ticket------------");
                         System.out.println("Name: " + passengerList.getLast().getFirstName() + " " + passengerList.getLast().getLastName());
-                        System.out.println(ticketOptions.get(1) + " - " + AgeGroup.REGULAR.toString());
+                        System.out.println(ticketOptions.get(1) + " - " + PassengerCategories.REGULAR.toString());
                         System.out.println("----------------------------------");
                         System.out.println("\n");
                         break;
