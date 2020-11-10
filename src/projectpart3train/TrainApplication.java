@@ -21,8 +21,6 @@ public class TrainApplication
 
 
 				//Output option for user to choose from.
-
-
 				System.out.println("--------------Menu-------------");
 				System.out.println("1. New passenger\n2. Show passengers\n3. Ticketprices\n4. Exit");
 				Scanner scanner = new Scanner(System.in);

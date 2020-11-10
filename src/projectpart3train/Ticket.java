@@ -122,11 +122,13 @@ public class Ticket extends TicketOptions implements IPassenger
                         System.out.println(ticketOptions.get(1) + " - " + PassengerCategories.REGULAR.toString());
                         System.out.println("----------------------------------");
                         System.out.println("\n");
-                        break;
+
                     }
+                    break;
                 default:
                     System.out.println("\nNot a valid choice\n");
                     createTicketType();
+                    break;
 
             }
         }
