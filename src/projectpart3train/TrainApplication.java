@@ -4,22 +4,24 @@ import java.util.Scanner;
 
 public class TrainApplication
 {
-	
-	//int forSwitchLoop;
-	int whileLoop = 0;
-	Ticket ticket = new Ticket();
+	//Dela creatticketType i 2 - 3 - 18?
+	//Konstruktor - creatpassenger - få bort rader
 
+	public static void main(String[] args)
+	{
 
-	//menu-Method to run the menu.
-	public void menu() {
+		//int forSwitchLoop;
+		int whileLoop = 0;
+		Ticket ticket = new Ticket();
+
+		//menu-Method to run the menu.
 		ticket.addTicketOptions();
+
 		//Loop (while) to run switch controlling the program
 		while(whileLoop != 99) {
 
 			try
 			{
-
-
 				//Output option for user to choose from.
 				System.out.println("--------------Menu-------------");
 				System.out.println("1. New passenger\n2. Show passengers\n3. Ticketprices\n4. Exit");
@@ -52,7 +54,6 @@ public class TrainApplication
 			catch(Exception e)
 			{
 				System.out.println("\nNot a valid choice\n");
-				menu();
 			}
 		}
 	}

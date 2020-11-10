@@ -30,8 +30,7 @@ public class Ticket extends TicketOptions implements IPassenger
     {
         try
         {
-            //Instaciate a new object passenger to the class Travler, the object in loaded with the variables demanded by the the constructor Passenger from the class Passenger.
-
+            //Instanciate a new object passenger to the class Travler, the object in loaded with the variables demanded by the the constructor Passenger from the class Passenger.
             PassengerProperties passenger = new PassengerProperties();
             Scanner scanner = new Scanner(System.in);
             //Check for the passengers name and age and store value using scanner and set to variable in class Passanger.
@@ -42,7 +41,6 @@ public class Ticket extends TicketOptions implements IPassenger
             System.out.println("Age: ");
             passenger.setAge(scanner.nextInt());
             passengerList.add(passenger);
-
         }
         catch (Exception e)
         {
@@ -122,7 +120,6 @@ public class Ticket extends TicketOptions implements IPassenger
                         System.out.println(ticketOptions.get(1) + " - " + PassengerCategories.REGULAR.toString());
                         System.out.println("----------------------------------");
                         System.out.println("\n");
-
                     }
                     break;
                 default:
