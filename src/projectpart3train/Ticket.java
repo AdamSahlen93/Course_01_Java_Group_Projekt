@@ -56,7 +56,6 @@ public class Ticket extends TicketOptions implements IPassenger
         try
         {
             Scanner ticketChoice = new Scanner(System.in);
-            addTicketOptions();
             System.out.println("1." + ticketOptions.get(0) + "\n2." + ticketOptions.get(1));
             int customerChoice = ticketChoice.nextInt();
 

@@ -6,13 +6,15 @@ public class TrainApplication
 {
 	
 	//int forSwitchLoop;
-	int forWhileLoop = 0;
-	Ticket ticketCreator = new Ticket();
+	int whileLoop = 0;
+	Ticket ticket = new Ticket();
+
+
 	//menu-Method to run the menu.
 	public void menu() {
-	
+		ticket.addTicketOptions();
 		//Loop (while) to run switch controlling the program
-		while(forWhileLoop != 99) {
+		while(whileLoop != 99) {
 
 			try
 			{
@@ -24,27 +26,26 @@ public class TrainApplication
 				System.out.println("--------------Menu-------------");
 				System.out.println("1. New passenger\n2. Show passengers\n3. Ticketprices\n4. Exit");
 				Scanner scanner = new Scanner(System.in);
-				int forSwitchLoop = scanner.nextInt();
+				int switchLoop = scanner.nextInt();
 				//Switch
-				switch (forSwitchLoop)
+				switch (switchLoop)
 				{
 					case 1:
 						//Instanciate a method to create a new passenger.
-						ticketCreator.createPassenger();
-						ticketCreator.createTicketType();
+						ticket.createPassenger();
+						ticket.createTicketType();
 						break;
 					case 2:
 						//Instanciate a method to show a list of all the passengers onboard the train.
-						ticketCreator.showList();
+						ticket.showList();
 						break;
 					case 3:
 						//Instanciate a method to show the ticketprices.
-						ticketCreator.addTicketOptions();
-						ticketCreator.showTicketOptions();
+						ticket.showTicketOptions();
 						break;
 					case 4:
 						//Will shutdown the program.
-						forWhileLoop = 99;
+						whileLoop = 99;
 						break;
 					default:
 						System.out.println("\nNot a valid choice\n");

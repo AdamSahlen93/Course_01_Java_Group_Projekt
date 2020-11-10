@@ -15,7 +15,7 @@ public class TicketOptions
     public void addTicketOptions()
     {
         ticketOptions.add("Single-use ticket");
-        ticketOptions.add("Monhly ticket");
+        ticketOptions.add("Monthly ticket");
     }
 
     public void showTicketOptions()
