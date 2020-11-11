@@ -2,7 +2,7 @@ package projectpart3train;
 
 import java.util.ArrayList;
 
-public class TicketOptions
+public abstract class TicketOptions
 {
     ArrayList<String> ticketOptions = new ArrayList<>();
     private final int singleTicketRegular = 35;

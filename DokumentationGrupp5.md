@@ -6,14 +6,7 @@
 
 ####Kandidater
 #####Objekt: 
-Klasser: Ticket, Passenger, Travelers, Menu, TrainApplication, Main
-TicketOptions, PassengerCategories, TicketCreator 
-
-Enum: PassengerCategories, AgeGroup
-
-Interface: IPassenger, Interface
-
-Lists: ArrayList prices, Arraylist passengers, LinkedList passengerList, ArrayList ticketOptions 
+TrainConductor, Ticket,  Passenger, Travelers, Menu, Main, TicketOptions, PassengerCategories, TicketCreator, TrainApplicationMain, AgeGroup, Prices, OnBoard, Train, TrainApplication 
 
 #####Metoder: 
 menu, main-method, switch, try-catch, showList, creatPassenger, creatTicketType, for-loop, while-loop, askPassenger, addTicketOptions, showTicketOptions, getters, setters
@@ -24,17 +17,10 @@ menu, main-method, switch, try-catch, showList, creatPassenger, creatTicketType,
 #####Aktörer:
 ???
 
-####Vilka av kandidaterna som blev av:
+####Vilka av kandidaterna som blev vad:
 
 #####Objekt: 
-Klasser: Ticket, Menu, TrainApplication, Main
-TicketOptions, PassengerCategories 
-
-Enum: PassengerCategories
-
-Interface: IPassenger
-
-Lists: LinkedList passengerList, ArrayList ticketOptions 
+Ticket, TrainApplicationMain, PassengerCategories 
 
 #####Metoder: 
 
