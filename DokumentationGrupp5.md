@@ -15,7 +15,7 @@ menu, main-method, switch, try-catch, showList, creatPassenger, creatTicketType,
 +forWhileLoop:int, +forSwitchLoop:int, +i:int, +customerChoice:int, -singleTicketRegular:int, -singleTicketDiscount:int, -monthlyTicketRegular:int, -monthlyTicketDiscount:int, -age:int, -firstName:String, -lastName:String, -fullName:String, +REGULAR:Enum, +SENIOR:Enum, +YOUTH:Enum, +choice:int
 
 #####Aktörer:
-???
+Konduktören,Passageraren
 
 ####Vilka av kandidaterna som blev vad:
 
@@ -31,10 +31,11 @@ menu, main-method, switch, try-catch, showList, creatPassenger, creatTicketType,
 +forWhileLoop:int, +forSwitchLoop:int, +i:int, +customerChoice:int, -singleTicketRegular:int, -singleTicketDiscount:int, -monthlyTicketRegular:int, -monthlyTicketDiscount:int, -age:int, -firstName:String, -lastName:String, -fullName:String, +REGULAR:Enum, +SENIOR:Enum, +YOUTH:Enum, +choice:int
 
 #####Aktörer:
-???
+Konduktören
 
 #####Motivering av objekt (endast objekten ska motiveras): Vi valde dessa objekt för att...
-
+Ticket: Vi valde detta objekt för att vi tyckte att ticket representerade innebörden av vad objektet utför. 
+PassengerProperties: Vi valde detta objekt för att peka på vad en person behöver ha för egenskaper för att vara en passagerare och lagra dessa för användning. 
 
 ####Daglogg
 
