@@ -2,7 +2,7 @@ package projectpart3train;
 
 import java.util.Scanner;
 
-public class TrainApplication
+public class TrainApplicationMain
 {
 
 	public static void main(String[] args)
