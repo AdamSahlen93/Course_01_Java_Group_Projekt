@@ -73,15 +73,23 @@ PassengerProperties: Vi valde detta objekt för att peka på vad en person behö
 
 #####På vilket sätt har ni använt er av Objektorentering? Vi har använt oss av objektorientering genom att...
 ##### :
+Klasser, "Clean main", delat upp metoder, interface, enum, abstract class, extends, inkapsling, arv, polymorfism, datahiding?
 
 #####Vilka klasser och metoder har vem haft ansvar för?
-
-
-
-####Grupparbete Vilka klasser och metoder har vem haft ansvar
- för? Hur har det gått att jobba i grupp? Var det nåt som blev
-  enklare att vara i grupp än att vara själv? Vad har ni stött på för svårigheter med att jobba i grupp?
+Tilldelningen såg ut som nedan:
+ 
+Adam: Klass: Ticket, TicketOptions. Enum: PassengerCategories 
   
+Simon: Klass: TrainApplication. Interface: IPassenger.
+  
+Robin: Klass: PassengerProperties, Main. Rapport: README.
+
+#### Hur har det gått att jobba i grupp? Var det nåt som blev enklare att vara 
+###i grupp än att vara själv? Vad har ni stött på för svårigheter med att jobba i grupp?
+  Enklare:
+   
+  Svårare:
+ 
  #### Beskrivning av hur vårt grupparbete har gått till :
 Vi började med en övergripande diskussion om projektet och skapade en mindmap som ingångspunkt.
 
@@ -97,13 +105,9 @@ Efter vi diskuterat vår mindmap beslöt
   
   I Githubprojektet bröt vi ner projektet som helhet i mindre uppgifter och tilldelade dessa till samtliga gruppmedlemmar. 
   
-  Tilldelningen såg ut som nedan: 
+  T
   
-  Adam: Klass: Ticket, TicketOptions. Enum: PassengerCategories 
   
-  Simon: Klass: TrainApplication. Interface: IPassenger.
-  
-  Robin: Klass: PassengerProperties, Main. Rapport: README.
   
   Efter indelning skapade var och en de tillordnade objekten inkluderande pseudokod och lade till dessa i repository:n. 
   Därefter kodade vi alla klasser tilsammans via delad skärm.
