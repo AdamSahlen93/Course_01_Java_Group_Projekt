@@ -4,47 +4,38 @@ import java.util.Scanner;
 
 public class TrainApplication
 {
-	//Dela creatticketType i 2 - 3 - 18?
-	//Konstruktor - creatpassenger - få bort rader
 
 	public static void main(String[] args)
 	{
-
-		//int forSwitchLoop;
 		int whileLoop = 0;
-		Ticket ticket = new Ticket();
 
-		//menu-Method to run the menu.
+		Ticket ticket = new Ticket();
 		ticket.addTicketOptions();
 
-		//Loop (while) to run switch controlling the program
-		while(whileLoop != 99) {
+
+		while(whileLoop != 99)
+		{
 
 			try
 			{
-				//Output option for user to choose from.
 				System.out.println("--------------Menu-------------");
 				System.out.println("1. New passenger\n2. Show passengers\n3. Ticketprices\n4. Exit");
 				Scanner scanner = new Scanner(System.in);
 				int switchLoop = scanner.nextInt();
-				//Switch
+
 				switch (switchLoop)
 				{
 					case 1:
-						//Instanciate a method to create a new passenger.
 						ticket.createPassenger();
-						ticket.createTicketType();
+						ticket.createTicket();
 						break;
 					case 2:
-						//Instanciate a method to show a list of all the passengers onboard the train.
 						ticket.showList();
 						break;
 					case 3:
-						//Instanciate a method to show the ticketprices.
 						ticket.showTicketOptions();
 						break;
 					case 4:
-						//Will shutdown the program.
 						whileLoop = 99;
 						break;
 					default:
